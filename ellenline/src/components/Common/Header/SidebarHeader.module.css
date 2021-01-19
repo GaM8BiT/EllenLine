@@ -11,13 +11,14 @@
     justify-items: center;
     display: none;
 }
-@media only screen and (max-width : 1025px) {
+@media only screen and (max-width : 1024px) {
 
     .aside{
-    
+        
         display: block;
     }
 }
+
 .aside__links{
 
     display: grid;

@@ -88,6 +88,7 @@
 
         grid-template-columns: repeat(auto-fit, 200px);
         justify-content: unset;
+        display: none;
     }
 }
 /* Смартфоны: горизонтальная ориентация */

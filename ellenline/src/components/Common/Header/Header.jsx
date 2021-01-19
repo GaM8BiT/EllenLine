@@ -8,7 +8,7 @@ import SidebarHeader from './SidebarHeader';
 const Header = (props) => {
 
     const [treeActive, setTreeActive] = useState('');
-    const [scroll, setScroll] = React.useState(0);
+    const [scroll, setScroll] = useState(0);
 
 
     const handleScroll = () => {
