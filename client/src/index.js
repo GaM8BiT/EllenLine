@@ -9,6 +9,7 @@ import Header from './components/Common/Header/Header';
 import Footer from './components/Common/Footer/Footer';
 import FormDBChange from './components/Admin/FormDBChange/FormDBChange';
 import AdminHeader from './components/Common/Header/AdminHeader'
+import Cruise from "./components/gg/Cruise";
 
 const simpleComponent = Сomponent => props =>{
    
@@ -35,6 +36,7 @@ ReactDOM.render((
   <Router>
       <Route exact path='/' component={simpleComponent(Home)}/>
       <Route exact path='/relax' component={simpleComponent(Relax)}/>
+      <Route exact path='/gg' component={simpleComponent(Cruise)}/>
       <Route path='/admin/:sector?/:category?' component={adminComponent(FormDBChange)}/>
       {/* <Route exact path='/admin/db' component={adminComponent(FormDBChange)}/> */}
   </Router>
