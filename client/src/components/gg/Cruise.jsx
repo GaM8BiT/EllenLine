@@ -1,18 +1,31 @@
 import React from 'react'
 import classes from "./Cruise.module.css"
-import PresentationMap from '../Common/Map/PresentationMap'
-import Slider from './Slider'
 
-function Map() {
-
-    //const [data, setData] = useState({advantages: [], services: []});
-    const homeOnMap= [{coordinates: [44.3973,33.9395], hintContent: 'Mriya Resort & SPA', balloonContentBody: 'с. Оползневое, улица Генерала Острякова, 9'}];
-    const cityCoordinates = [44.3973,33.9395];
+function App() {
     return (
-        <div className={classes.main}>
-          {/* <PresentationMap className={ classes.footer__map } id="map" cityCoordinates={cityCoordinates} points={homeOnMap}/> */}
-          <Slider/>
-        </div>
-    )
+    <div className={classes.App}>
+            <div className={classes.app_wrapper}>
+                <div className={classes.main}>
+                    <div className={classes.sidebar}>
+                        <p><h3>Количеcтво пересадок</h3></p>
+                        <form>
+                            <label>
+                                <input type="checkbox" className={classes.input}/>
+                                <span className={classes.checker}>
+                                    <p>Все</p>
+                                    <p>Без пересадок</p>
+                                    <p>1 пересадка</p>
+                                    <p>2 пересадки</p>
+                                    <p>3 пересадки</p>
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                    <div className={classes.filter}>2 слот</div>
+                    <div className={classes.tickets}>3 слот</div>
+                </div>
+            </div>
+    </div>);
+    
 }
-export default Map
+export default App
